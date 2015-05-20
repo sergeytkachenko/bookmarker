@@ -9,6 +9,7 @@ use Slider;
 
 class IndexController extends ControllerBase {
     public function indexAction() {
+        return;
         $folder = PUBLIC_PATH."/json-data/";
         foreach (scandir($folder) as $path ) {
             $date = preg_replace("/^([0-9]+)\\.json$/", "$1", $path);
